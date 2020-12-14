@@ -3,7 +3,17 @@
 
  Ros node for get equirectangular image of Ricoh theta V camera(https://theta360.com/en/about/theta/v.html).
  
+
+Use
+----
+
  Before use, you need to connect theta to the computer using USB and then switch theta to live mode.
+ 
+ For turn off the node, you have to call the service : rosservice call /turnoff "{}"
+ 
+  - Sample image
+  
+Will be updated soon!
 
 Prerequisit
 ----
@@ -35,6 +45,7 @@ TODOs
 
  - Timestamp in image message might not accurate. Have to fix it.
  - Add sensor list lookup node.
+ - Cannot turn off the node with Ctrl-C
 
 Refer codes/pages
 ----
