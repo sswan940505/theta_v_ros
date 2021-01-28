@@ -26,6 +26,8 @@ $ cd build
 $ cmake ..
 $ make
 $ sudo make install
+
+nvdecoder : follow this page https://gist.github.com/corenel/a615b6f7eb5b5425aa49343a7b409200
 ```
 
 Parameters
