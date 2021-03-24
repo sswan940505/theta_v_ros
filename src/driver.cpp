@@ -159,7 +159,7 @@ void thetaVDriver::cv2sensorImgComp(cv::Mat mat, sensor_msgs::CompressedImage& s
   sensorImg.format = dummy.encoding;
   int bitDepth = enc::bitDepth(dummy.encoding);
   int numChannels = enc::numChannels(dummy.encoding);
-  params[0] = CV_IMWRITE_PNG_COMPRESSION;
+  params[0] = cv::IMWRITE_PNG_COMPRESSION;
   params[1] = m_param_pngLevel;
   sensorImg.format += "; png compressed";
   if (((bitDepth == 16) || (bitDepth == 8)) && ((numChannels == 1) || (numChannels == 3)))
